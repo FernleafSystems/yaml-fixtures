@@ -1,4 +1,4 @@
-{
+
     "name": "Fernleaf/query-builder",
     "version": "v1.0",
     "authors": [
@@ -11,5 +11,5 @@
 
     },
     "require-dev": {
-    },
+    }
 }

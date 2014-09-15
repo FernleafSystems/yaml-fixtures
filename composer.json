@@ -1,0 +1,15 @@
+{
+    "name": "Fernleaf/query-builder",
+    "version": "v1.0",
+    "authors": [
+        {
+            "name": "Dave Goodchild",
+            "email": "dave@davegoodchild.co.uk"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+    },
+}

@@ -130,7 +130,7 @@ trait YamlFixtures {
 		if ( $nActualDatasets ) {
 			foreach ( $aMatches as $aMatch ) {
 				$sDataSets = $aMatch[1];
-				if ( preg_match_all( '#([a-z_]+)((?:(?=(?:,|\(|\]))(?:\(.+?\)))?)#i', $sDataSets, $aMatches, PREG_SET_ORDER ) ) {
+				if ( preg_match_all( '#([a-z0-9_]+)((?:(?=(?:,|\(|\]))(?:\(.+?\)))?)#i', $sDataSets, $aMatches, PREG_SET_ORDER ) ) {
 					foreach ( $aMatches as $aMatchSet ) {
 						// 1 = basic_addon and 2 = (id=1)
 						$aParams = array();

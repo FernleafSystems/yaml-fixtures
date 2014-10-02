@@ -13,6 +13,7 @@ trait YamlFixtures {
 	 * @return \PHPUnit_Extensions_Database_DataSet_YamlDataSet
 	 */
 	protected function getDataSet() {
+
 		$oYamlLoader = new YamlLoader();
 		if ( method_exists( $this, 'onBeforeGetDataSet' ) ) {
 			$this->onBeforeGetDataSet( $oYamlLoader );

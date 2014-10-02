@@ -151,7 +151,7 @@ class YamlLoader {
 
 		// apply fixture specific filters
 		foreach ( $aFixture['params'] as $sParamKey => $sParamValue ) {
-			$sContents = preg_replace( '#:\s\{\{'.strtoupper( $sParamKey ).'(=([^\{]+))?\}\}#', ': '.$sParamValue, $sContents );
+			$sContents = preg_replace( '#\{\{'.strtoupper( $sParamKey ).'(=([^\}{]+))?\}\}#', $sParamValue, $sContents );
 		}
 
 		// apply any filters (in the form of closures)
